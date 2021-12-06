@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		702E9F01275CED58008CA43B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F00275CED58008CA43B /* AppDelegate.swift */; };
 		702E9F03275CED58008CA43B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F02275CED58008CA43B /* SceneDelegate.swift */; };
-		702E9F05275CED58008CA43B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F04275CED58008CA43B /* ViewController.swift */; };
 		702E9F08275CED58008CA43B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702E9F06275CED58008CA43B /* Main.storyboard */; };
 		702E9F0A275CED59008CA43B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702E9F09275CED59008CA43B /* Assets.xcassets */; };
 		702E9F0D275CED59008CA43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702E9F0B275CED59008CA43B /* LaunchScreen.storyboard */; };
 		702E9F18275CED59008CA43B /* CL2_StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F17275CED59008CA43B /* CL2_StopwatchTests.swift */; };
 		702E9F23275CED59008CA43B /* CL2_StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F22275CED59008CA43B /* CL2_StopwatchUITests.swift */; };
+		702E9F3A275D11FF008CA43B /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F39275D11FF008CA43B /* StopWatch.swift */; };
+		702E9F3C275E16F9008CA43B /* StopwatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F3B275E16F9008CA43B /* StopwatchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		702E9EFD275CED58008CA43B /* CL2_Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CL2_Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		702E9F00275CED58008CA43B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		702E9F02275CED58008CA43B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		702E9F04275CED58008CA43B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		702E9F07275CED58008CA43B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		702E9F09275CED59008CA43B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		702E9F0C275CED59008CA43B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		702E9F1E275CED59008CA43B /* CL2_StopwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CL2_StopwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		702E9F22275CED59008CA43B /* CL2_StopwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CL2_StopwatchUITests.swift; sourceTree = "<group>"; };
 		702E9F24275CED59008CA43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702E9F39275D11FF008CA43B /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		702E9F3B275E16F9008CA43B /* StopwatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 		702E9EF4275CED58008CA43B = {
 			isa = PBXGroup;
 			children = (
+				702E9F38275D11ED008CA43B /* Utility */,
+				702E9F30275CED7B008CA43B /* Controller */,
 				702E9EFF275CED58008CA43B /* CL2_Stopwatch */,
 				702E9F16275CED59008CA43B /* CL2_StopwatchTests */,
 				702E9F21275CED59008CA43B /* CL2_StopwatchUITests */,
@@ -101,7 +105,6 @@
 			children = (
 				702E9F00275CED58008CA43B /* AppDelegate.swift */,
 				702E9F02275CED58008CA43B /* SceneDelegate.swift */,
-				702E9F04275CED58008CA43B /* ViewController.swift */,
 				702E9F06275CED58008CA43B /* Main.storyboard */,
 				702E9F09275CED59008CA43B /* Assets.xcassets */,
 				702E9F0B275CED59008CA43B /* LaunchScreen.storyboard */,
@@ -126,6 +129,22 @@
 				702E9F24275CED59008CA43B /* Info.plist */,
 			);
 			path = CL2_StopwatchUITests;
+			sourceTree = "<group>";
+		};
+		702E9F30275CED7B008CA43B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				702E9F3B275E16F9008CA43B /* StopwatchController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		702E9F38275D11ED008CA43B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				702E9F39275D11FF008CA43B /* StopWatch.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				702E9F05275CED58008CA43B /* ViewController.swift in Sources */,
 				702E9F01275CED58008CA43B /* AppDelegate.swift in Sources */,
+				702E9F3A275D11FF008CA43B /* StopWatch.swift in Sources */,
 				702E9F03275CED58008CA43B /* SceneDelegate.swift in Sources */,
+				702E9F3C275E16F9008CA43B /* StopwatchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
