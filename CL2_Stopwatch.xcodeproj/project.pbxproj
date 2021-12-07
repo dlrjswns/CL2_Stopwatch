@@ -16,6 +16,7 @@
 		702E9F23275CED59008CA43B /* CL2_StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F22275CED59008CA43B /* CL2_StopwatchUITests.swift */; };
 		702E9F3A275D11FF008CA43B /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F39275D11FF008CA43B /* StopWatch.swift */; };
 		702E9F3C275E16F9008CA43B /* StopwatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F3B275E16F9008CA43B /* StopwatchController.swift */; };
+		702E9F3F275F727E008CA43B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E9F3E275F727E008CA43B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		702E9F24275CED59008CA43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		702E9F39275D11FF008CA43B /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		702E9F3B275E16F9008CA43B /* StopwatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchController.swift; sourceTree = "<group>"; };
+		702E9F3E275F727E008CA43B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		702E9EF4275CED58008CA43B = {
 			isa = PBXGroup;
 			children = (
+				702E9F3D275F71F6008CA43B /* Cell */,
 				702E9F38275D11ED008CA43B /* Utility */,
 				702E9F30275CED7B008CA43B /* Controller */,
 				702E9EFF275CED58008CA43B /* CL2_Stopwatch */,
@@ -145,6 +148,14 @@
 				702E9F39275D11FF008CA43B /* StopWatch.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		702E9F3D275F71F6008CA43B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				702E9F3E275F727E008CA43B /* TableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702E9F3F275F727E008CA43B /* TableViewCell.swift in Sources */,
 				702E9F01275CED58008CA43B /* AppDelegate.swift in Sources */,
 				702E9F3A275D11FF008CA43B /* StopWatch.swift in Sources */,
 				702E9F03275CED58008CA43B /* SceneDelegate.swift in Sources */,
